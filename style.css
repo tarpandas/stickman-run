@@ -1,0 +1,75 @@
+*{
+    left: 10px;
+    top: 10px;
+}
+#game{
+    position: relative;
+    width: 500px;
+    height: 200px;
+    border-bottom: 20px solid green;
+}
+#character{
+    width: 40px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+}
+#block{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 130px;
+    left: 480px;
+    animation: block 2s infinite linear;
+}
+#score{
+    width: 150px;
+    height: 30px;
+    font-family: "Calibri";
+    font-weight: bold;
+    border: 1px rgb(0, 5, 107) solid;
+    background-color: rgb(0, 5, 107);
+    color: rgb(255, 217, 0);
+    position:fixed;
+    top:300px;
+    left:20px;
+}
+#refresh{
+    width: 150px;
+    height: 42px;
+    font-family: "Calibri";
+    background-color: maroon;
+    border: 1px maroon solid;
+    color:white;
+    position: fixed;
+    top:300px;
+    left:360px;
+}
+#para{
+    font-family: "Calibri";
+    color:black;
+    position: fixed;
+    text-align: center;
+    top:250px;
+    left:20px;
+}
+#sun{
+    width:50px;
+    height:50px;
+    position:fixed;
+    top: 30px;
+    left:200px;
+}
+.animate{
+    animation: jump 700ms;
+}
+@keyframes jump{
+    0%{top:150px;}
+    20%{top:100px;}
+    50%{top:100px;}
+    100%{top:150px;}
+}
+@keyframes block{
+    0%{left:480px;}
+    100%{left:-40px;}
+}
